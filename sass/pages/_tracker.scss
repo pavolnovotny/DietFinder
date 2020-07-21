@@ -1,0 +1,146 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    width: 70%;
+    border: 2px solid $color-grey-dark;
+    margin-bottom: 1rem;
+    &__top{
+       text-align: right; 
+       
+       padding: 1rem ;
+       border-bottom: 2px solid $color-grey-dark;
+       
+       background-color: rgba($color: $color-primary-dark, $alpha: .3)
+
+    }
+
+    &__middle{
+        display: flex;
+        border-bottom: 2px solid $color-grey-dark;
+        width: 100%;
+        
+    }
+
+    &__buttons{
+        text-align: right;
+        padding: 1rem;
+    }
+
+    &__bottom{
+        border-top: 2px solid $color-grey-dark;
+        padding: 1rem ;
+        text-align: center;
+        background-color: rgba($color: $color-primary-dark, $alpha: .3)
+    }
+
+    @include respond(tab-port) {
+        width: 100%;       
+        
+      }
+}
+
+#addItem{
+    margin: 2rem 0;
+}
+.form input{
+    padding: .7rem 1.4rem;
+    width: 20rem;
+    margin: .7rem 0;
+    border: none;
+    border-bottom: 1px solid $color-grey-dark;
+    background-color: inherit;
+    // font-size: 1.5rem;
+    &:focus{
+        outline: none;
+        
+    }
+
+    @include respond(phone) {
+        width: 15rem;       
+        
+      }
+}
+
+.form{
+    width: 40%;
+    
+    @include respond(tab-port) {
+        width: 50%;       
+        
+      }
+
+    &__wrapper{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+
+
+    
+
+   
+    }
+    
+    
+}
+
+
+.picture{
+    width: 60%;
+    
+    background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-dark-3, 0.7),
+    rgba($color-grey-dark-2, 0.7)
+  ),
+    url(../../img/egg-near-blueberries-1305063.jpg);
+    background-size: cover;
+  background-position: center;
+  border-right:2px solid $color-grey-dark;
+  
+  @include respond(tab-port) {
+    width: 50%;    
+    
+  }
+
+}
+
+
+
+.item-list{
+    
+    width: 70%;
+   
+   
+    list-style: none;
+}
+
+
+.item{
+    padding: .5rem 1rem;
+    
+   position: relative;
+   border: 2px solid $color-grey-dark; 
+   border-radius: .5rem;
+   margin-bottom: .5rem;
+  
+}
+
+.item i{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: $color-primary-dark;
+    cursor: pointer;
+
+    &:active, :visited{
+        transform: translateY(2px);
+        
+    }
+
+    &:focus{
+        outline: none;
+    }
+}

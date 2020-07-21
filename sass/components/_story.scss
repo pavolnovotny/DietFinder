@@ -1,0 +1,49 @@
+.story, .story2 {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: $box-shadow;
+  background-color: rgba($color-white, 0.6);
+  border-radius: 3px;
+  padding: 4rem 2rem;
+  font-size: $default-font-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+  @include respond(tab-port) {
+    width: 100%;       
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+ 
+
+  &__svg {
+    width: 20rem;
+    height: 20rem;
+
+    
+  }
+
+  &__img {
+    height: 100%;
+  }
+  &__text {
+    width: 70%;
+    &--para:not(:last-child) {
+      margin-bottom: 1rem;
+  }
+  @include respond(tab-port) {
+    width: 100%;       
+    flex-direction: column;
+  }
+  }
+}
+
+.story2{
+  display: flex;
+  flex-direction: column;
+  
+}

@@ -1,0 +1,105 @@
+.btn{
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 2px solid $color-white;
+  font-weight: 300;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  transition: all 0.15s;
+  animation: bouncy 5s infinite linear;
+  position: relative;
+  cursor: pointer;
+  background-color: $color-primary-dark;
+  font-size: 1.8rem;
+
+  &:link, 
+  &:visited {
+    border-radius: 4px;
+    color: $color-primary;    
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+    cursor: pointer;
+    
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:hover {
+    background-color:  $color-grey-light-1;
+    color: $color-primary-dark;
+    border: 2px solid  $color-primary-dark;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(0);
+    outline: none;
+    cursor: pointer;
+    
+  }
+}
+
+
+.myButton {
+	box-shadow: $box-shadow;
+	background:linear-gradient(to bottom, $color-white 1%, $color-primary-dark 100%);
+	background-color:$color-white;
+	border-radius:1.5rem;
+	border:1px solid $color-grey-dark;
+	display:inline-block;
+	cursor:pointer;
+  color:$color-black;
+  text-transform: uppercase;
+	
+	
+	padding:.7rem 1.5rem;
+	text-decoration:none;
+	// text-shadow:0px 1px 0px $color-white;
+}
+
+.myButton i{
+  margin-right: .5rem;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton:focus{
+  outline: none;
+}
+
+.green{
+  background:linear-gradient(to bottom, $color-white 1%, $color-primary-dark 100%);
+}
+
+.yellow{
+  background:linear-gradient(to bottom, $color-white 1%, $color-secondary-light 100%);
+}
+
+.red{
+  background:linear-gradient(to bottom, $color-white 1%, $color-secondary-dark 100%);
+}
+
+.blue{
+  background:linear-gradient(to bottom, $color-white 1%, $color-tertiary-light 100%);
+}
+.light{
+  background:linear-gradient(to bottom, $color-white 1%, $color-tertiary-light-2 100%);
+}
+

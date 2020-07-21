@@ -1,0 +1,13 @@
+.section-about_me {
+  margin-top: -12rem;
+  margin-bottom: -4rem;
+  padding: 15rem 0;
+  position: relative;
+  background-color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+
